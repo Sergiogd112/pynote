@@ -8,10 +8,70 @@
 
 <body>
     <style>
-        body {
-            background: url(test.svg);
-            background-size: contain;
+        :root {
+            --nord0: #2e3440;
+            --nord1: #3b4252;
+            --nord2: #434c5e;
+            --nord3: #4c566a;
+            --nord4: #d8dee9;
+            --nord5: #e5e9f0;
+            --nord6: #eceff4;
+            --nord7: #8fbcbb;
+            --nord8: #88c0d0;
+            --nord9: #81a1c1;
+            --nord10: #5e81ac;
+            --nord11: #bf616a;
+            --nord12: #d08770;
+            --nord13: #ebcb8b;
+            --nord14: #a3be8c;
+            --nord15: #b48ead;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-color: var(--nord0);
+            
+        }
+    
+        svg {
+            margin: 0;
+            padding: 0;
+
+            background-color: var(--nord0);
+            color: var(--nord9);
+        }
+        .h0{
+            fill: var(--nord9);
+            font-size: 15px;
+        }
+        .h1 {
+            fill: var(--nord15);
+            font-weight: bold;
+            font-size: 30px;
+        }
+    
+        line {
+            stroke-width: 2;
+        }
+    
+        .l1 {
+            fill: var(--nord15);
+        }
+    
+        .h2 {
+            fill: var(--nord14);
+            font-size: 25px;
         }
     </style>
-
+    <svg height="1080" width="1920">
+        <g>
+        <text x="10" y="30" class="h1">Several lines:</text>
+        <text x="100" y="55" class="h2">First line.</text>
+        <text x="100" y="115" class="h0">Second line.</text>
+    
+        <line x1="50" y1="40" x2="50" y2="116" stroke="var(--nord15)" stroke-width="2" />
+        <line x1="50" y1="52" x2="98" y2="52" stroke="var(--nord15)" stroke-width="2" />
+        <line x1="50" y1="115" x2="98" y2="115" stroke="var(--nord15)" stroke-width="2" />
+    </g>
+    </svg>
+</body>
 </html>
